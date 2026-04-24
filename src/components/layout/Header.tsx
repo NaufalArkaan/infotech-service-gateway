@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,16 +10,21 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#161C24] border-b border-[#2D3748]">
       <div className="flex justify-between items-center px-8 h-16">
-        <div translate="no" className="notranslate text-2xl font-black tracking-tighter text-[#F04D32] font-space-grotesk uppercase">
-          INFOTECH_CORE
-        </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/Lab_logo.png"
+            alt="Infotech Lab Logo"
+            width={200}
+            height={80}
+            className="h-12 md:h-14 w-auto object-contain"
+            priority
+          />
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 items-center">
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Profile</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Network</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Security</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Support</a>
+          <Link href="/profile" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">Profile</Link>
+          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Announcement</a>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -34,10 +41,8 @@ export default function Header() {
       {/* Mobile Nav Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-[#161C24] border-t border-[#2D3748] px-8 py-4 flex flex-col gap-4">
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Systems</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Network</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Security</a>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Support</a>
+          <Link href="/profile" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">Profile</Link>
+          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Announcement</a>
         </div>
       )}
     </header>

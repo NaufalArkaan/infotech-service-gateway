@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="flex gap-base mt-sm">
             <a
-              href="https://systems.infotech.pro"
+              href="https://infotech.umm.ac.id"
               className="bg-[#F04D32] text-white font-space-grotesk font-bold text-lg px-xl py-md rounded-lg custom-glow transition-all active:scale-95 flex items-center gap-2 no-underline"
             >
               Go to Website
@@ -56,8 +56,14 @@ export default function Home() {
         {/* Service Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {filteredServices.length > 0 ? (
-            filteredServices.map((service) => (
-              <ServiceCard key={service.id} service={service} />
+            filteredServices.map((service, index) => (
+              <div
+                key={service.id}
+                className="opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <ServiceCard service={service} />
+              </div>
             ))
           ) : (
             <div className="col-span-full text-center text-gray-500 py-12">
