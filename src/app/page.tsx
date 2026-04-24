@@ -21,14 +21,14 @@ export default function Home() {
       <main className="pt-32 pb-xl px-margin max-w-7xl mx-auto min-h-screen">
         {/* Hero Section */}
         <section className="flex flex-col items-center text-center mb-xl">
-          <h1 className="font-h1 text-h1 text-on-surface mb-sm max-w-3xl">
+          <h1 className="opacity-0 animate-fade-in-up font-h1 text-h1 text-on-surface mb-sm max-w-3xl" style={{ animationDelay: '100ms' }}>
             Website Has Been Moved
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-md max-w-2xl">
+          <p className="opacity-0 animate-fade-in-up font-body-lg text-body-lg text-on-surface-variant mb-md max-w-2xl" style={{ animationDelay: '200ms' }}>
             Our services are now hosted on a new domain. Please select the service below to proceed.
           </p>
 
-          <div className="flex gap-base mt-sm">
+          <div className="opacity-0 animate-fade-in-up flex gap-base mt-sm" style={{ animationDelay: '300ms' }}>
             <a
               href="https://infotech.umm.ac.id"
               className="bg-[#F04D32] text-white font-space-grotesk font-bold text-lg px-xl py-md rounded-lg custom-glow transition-all active:scale-95 flex items-center gap-2 no-underline"
@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Filter & Search */}
-        <div className="mb-lg max-w-xl mx-auto relative">
+        <div className="opacity-0 animate-fade-in-up mb-lg max-w-xl mx-auto relative" style={{ animationDelay: '400ms' }}>
           <span translate="no" className="material-symbols-outlined notranslate absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
             search
           </span>
@@ -60,7 +60,7 @@ export default function Home() {
               <div
                 key={service.id}
                 className="opacity-0 animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms` }}
+                style={{ animationDelay: `${(index + 5) * 100}ms` }}
               >
                 <ServiceCard service={service} />
               </div>

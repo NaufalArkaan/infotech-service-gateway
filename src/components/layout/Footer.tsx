@@ -6,16 +6,16 @@ export default function Footer() {
     <footer className="w-full bg-[#0D1117] border-t border-[#2D3748] pt-16 pb-8 px-8 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#F04D32]/5 blur-[120px] rounded-full pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
-          
+
           {/* Brand & About */}
           <div className="lg:col-span-2 flex flex-col items-start gap-6">
             <Link href="/" className="flex items-center gap-3">
-              <Image 
-                src="/Lab_logo.png" 
-                alt="Infotech Lab Logo" 
+              <Image
+                src="/Lab_logo.png"
+                alt="Infotech Lab Logo"
                 width={150}
                 height={50}
                 className="h-10 w-auto object-contain"
@@ -42,8 +42,7 @@ export default function Footer() {
             <h4 className="font-space-grotesk font-bold text-white tracking-wider text-sm uppercase mb-2">Quick Links</h4>
             <Link href="/" className="text-gray-400 hover:text-[#F04D32] text-sm transition-colors w-fit">Home</Link>
             <Link href="/profile" className="text-gray-400 hover:text-[#F04D32] text-sm transition-colors w-fit">Laboratory Profile</Link>
-            <a href="#" className="text-gray-400 hover:text-[#F04D32] text-sm transition-colors w-fit">Services & Facilities</a>
-            <a href="#" className="text-gray-400 hover:text-[#F04D32] text-sm transition-colors w-fit">Announcements</a>
+            <Link href="/faq" className="text-gray-400 hover:text-[#F04D32] text-sm transition-colors w-fit">FAQ</Link>
           </div>
 
           {/* Contact & Address */}

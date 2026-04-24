@@ -30,17 +30,17 @@ export default function Profile() {
       <main className="pt-32 pb-xl px-margin max-w-7xl mx-auto min-h-screen">
         {/* Hero Section */}
         <section className="flex flex-col items-center text-center mb-24">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-[#F04D32]/30 bg-[#F04D32]/10 text-[#F04D32] font-space-grotesk text-sm font-bold uppercase tracking-wider mb-6">
+          <div className="opacity-0 animate-fade-in-up inline-block px-4 py-1.5 rounded-full border border-[#F04D32]/30 bg-[#F04D32]/10 text-[#F04D32] font-space-grotesk text-sm font-bold uppercase tracking-wider mb-6" style={{ animationDelay: '100ms' }}>
             About Us
           </div>
-          <h1 className="font-h1 text-h1 text-on-surface mb-sm max-w-4xl">
+          <h1 className="opacity-0 animate-fade-in-up font-h1 text-h1 text-on-surface mb-sm max-w-4xl" style={{ animationDelay: '200ms' }}>
             Information Technology Laboratory
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-md max-w-3xl">
+          <p className="opacity-0 animate-fade-in-up font-body-lg text-body-lg text-on-surface-variant mb-md max-w-3xl" style={{ animationDelay: '300ms' }}>
             Empowering innovation through research, development, and advanced technological solutions. We are the core of technical excellence.
           </p>
 
-          <div className="mt-8 relative w-full max-w-5xl aspect-[21/9] rounded-2xl overflow-hidden border border-[#2D3748] shadow-[0_0_40px_rgba(240,77,50,0.15)] group">
+          <div className="opacity-0 animate-fade-in-up mt-8 relative w-full max-w-5xl aspect-[21/9] rounded-2xl overflow-hidden border border-[#2D3748] shadow-[0_0_40px_rgba(240,77,50,0.15)] group" style={{ animationDelay: '400ms' }}>
             {carouselImages.map((src, idx) => (
               <Image
                 key={src}
@@ -91,7 +91,7 @@ export default function Profile() {
 
         {/* Struktur Organisasi & Divisi Section */}
         <section className="mb-24">
-          <div className="text-center mb-12">
+          <div className="opacity-0 animate-fade-in-up text-center mb-12" style={{ animationDelay: '100ms' }}>
             <h2 className="text-3xl font-space-grotesk font-bold text-white mb-4">Organizational Structure & Divisions</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">The synergy between the core board and various divisions in realizing the laboratory's vision and mission professionally.</p>
           </div>
@@ -142,7 +142,7 @@ export default function Profile() {
 
         {/* Keahlian & Kompetensi Divisi */}
         <section className="mb-24">
-          <div className="text-center mb-12">
+          <div className="opacity-0 animate-fade-in-up text-center mb-12" style={{ animationDelay: '100ms' }}>
             <h2 className="text-3xl font-space-grotesk font-bold text-white mb-4">Division Skills & Competencies</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">The primary focus of skill development for each division to drive continuous innovation and creativity.</p>
           </div>
@@ -191,13 +191,14 @@ export default function Profile() {
         <section className="text-center bg-gradient-to-b from-[#1A222C] to-[#161C24] border border-[#2D3748] rounded-3xl p-12 relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F04D32]/10 via-transparent to-transparent opacity-60 pointer-events-none"></div>
 
-          <h2 className="text-3xl font-space-grotesk font-bold text-white mb-6 relative z-10">Ready to Collaborate?</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-8 relative z-10">
+          <h2 className="opacity-0 animate-fade-in-up text-3xl font-space-grotesk font-bold text-white mb-6 relative z-10" style={{ animationDelay: '100ms' }}>Ready to Collaborate?</h2>
+          <p className="opacity-0 animate-fade-in-up text-gray-400 max-w-2xl mx-auto mb-8 relative z-10" style={{ animationDelay: '200ms' }}>
             Join us in building the future of technology. Whether you are a student, researcher, or industry partner, we are always open to new opportunities.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-[#F04D32] text-white font-space-grotesk font-bold px-8 py-4 rounded-lg custom-glow transition-all active:scale-95 relative z-10 no-underline"
+            className="opacity-0 animate-fade-in-up inline-flex items-center gap-2 bg-[#F04D32] text-white font-space-grotesk font-bold px-8 py-4 rounded-lg custom-glow transition-all active:scale-95 relative z-10 no-underline"
+            style={{ animationDelay: '300ms' }}
           >
             Explore Our Services
             <span translate="no" className="material-symbols-outlined notranslate">arrow_forward</span>

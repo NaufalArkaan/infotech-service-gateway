@@ -24,7 +24,7 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 items-center">
           <Link href="/profile" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">Profile</Link>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Announcement</a>
+          <Link href="/faq" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">FAQ</Link>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -42,7 +42,7 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-[#161C24] border-t border-[#2D3748] px-8 py-4 flex flex-col gap-4">
           <Link href="/profile" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">Profile</Link>
-          <a className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#">Announcement</a>
+          <Link href="/faq" className="font-space-grotesk uppercase tracking-widest text-xs font-bold text-gray-400 hover:text-white transition-colors">FAQ</Link>
         </div>
       )}
     </header>
