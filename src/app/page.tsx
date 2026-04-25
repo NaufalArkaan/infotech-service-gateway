@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="opacity-0 animate-fade-in-up flex gap-base mt-sm" style={{ animationDelay: '300ms' }}>
             <a
-              href="https://infotech.umm.ac.id"
+              href="https://i-lab.umm.ac.id"
               className="bg-[#F04D32] text-white font-space-grotesk font-bold text-lg px-xl py-md rounded-lg custom-glow transition-all active:scale-95 flex items-center gap-2 no-underline"
             >
               Go to Website
